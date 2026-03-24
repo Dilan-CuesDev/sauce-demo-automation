@@ -1,41 +1,98 @@
-# 🧪 SauceDemo Automation - Playwright + Cucumber
+# 🧪 SauceDemo Automation - Playwright + Cucumber + Allure
 
-## 📌 Descripción
-Suite de pruebas automatizadas E2E para la aplicación SauceDemo utilizando Playwright y Cucumber, aplicando el patrón Page Object Model (POM).
+Proyecto de automatización de pruebas E2E para la aplicación **SauceDemo**, utilizando **Playwright**, **Cucumber (BDD)** y **Allure Reports**.
+
+---
 
 ## 🚀 Tecnologías utilizadas
-- Playwright
-- Cucumber (Gherkin)
-- TypeScript
-- Node.js
+
+* Playwright
+* Cucumber (BDD)
+* TypeScript
+* Allure Reports
+
+---
 
 ## 📂 Estructura del proyecto
-- `src/pages/` → Page Objects
-- `src/steps/` → Step Definitions
-- `src/features/` → Escenarios en Gherkin
-- `src/hooks/` → Configuración del navegador
 
-## ✅ Escenarios automatizados
-- Login exitoso
-- Login con usuario bloqueado
-- Agregar producto al carrito
-- Visualización del carrito
-- Proceso completo de compra
-
-## ⚙️ Instalación
-```bash
-npm install
+```
+src/
+ ├── features/       # Escenarios Gherkin
+ ├── steps/          # Step Definitions
+ ├── pages/          # Page Object Model (POM)
+ ├── hooks/          # Hooks (Before / After)
 ```
 
-## ▶️ Ejecución
+---
+
+## 🧠 Patrón de diseño
+
+Se implementa **Page Object Model (POM)** para:
+
+* Mejorar la mantenibilidad
+* Reutilizar código
+* Separar lógica de pruebas y UI
+
+---
+
+## ▶️ Ejecución de pruebas
+
 ```bash
 npm test
 ```
 
-## 🧠 Patrón utilizado
+---
 
-Se implementó Page Object Model (POM) para mejorar la mantenibilidad y reutilización del código.
+## 📊 Reportes con Allure
 
-## 📌 Autor
+### Generar reporte:
 
-Dilan (YOP)
+```bash
+npx allure generate allure-results --clean -o allure-report
+```
+
+### Abrir reporte:
+
+```bash
+npx allure open allure-report
+```
+
+---
+
+## 📸 Evidencias
+
+El proyecto incluye:
+
+* Captura automática de screenshots en cada escenario (PASS/FAIL)
+* Integración con Allure para visualización de evidencias
+
+---
+
+## 🧪 Escenarios implementados
+
+* Login exitoso
+* Login inválido
+* Agregar producto al carrito
+* Flujo completo de compra
+
+---
+
+## 💡 Buenas prácticas aplicadas
+
+* Uso de hooks (Before / After)
+* Manejo de asincronía con async/await
+* Separación de responsabilidades
+* Código mantenible
+
+---
+
+## 👨‍💻 Autor
+
+**YO, Dilan**
+QA Engineer 
+
+---
+
+## ⭐ Objetivo del proyecto
+
+Automatización de pruebas E2E, aplicando buenas prácticas y herramientas usadas en entornos reales.

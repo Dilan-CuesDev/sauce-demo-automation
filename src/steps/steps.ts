@@ -4,7 +4,7 @@ import { Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { InventoryPage } from "../pages/InventoryPage"; 
 import { CartPage } from "../pages/CartPage";
-import { CheckoutPage } from "../pages/checkoutPages";
+import { CheckoutPage } from "../pages/CheckoutPages";
 
 let loginPage: LoginPage;
 let inventoryPage: InventoryPage;
